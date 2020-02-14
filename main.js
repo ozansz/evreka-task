@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#loading-icon").hide()
+    $dom.clearTable()
     $api.initialize()
 
     setInterval(function() {
