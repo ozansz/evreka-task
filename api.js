@@ -1,6 +1,4 @@
 var $api = {
-    __xmlhttp: undefined,
-    __url: 'https://www.bloomberght.com/piyasa/intradaydata/dolar',
     initialize: function() {
         $.ajaxSetup({
             type: 'GET',
@@ -9,20 +7,10 @@ var $api = {
                 $dom.updateData(JSON.parse(data))
             }
         })
-        console.log("API is initialized.")
-        //$api.__xmlhttp = new XMLHttpRequest()
-        //$api.__xmlhttp.withCredentials = true
-        //$api.__xmlhttp.onreadystatechange = function() {
-        //    if (this.readyState == 4 && this.status == 200) {
-        //        $dom.updateData(JSON.parse(this.responseText))
-        //    } else {
-        //        alert("Err: state: " + this.readyState + ", status: " + this.status)
-        //    }
-        //};
+        
+        console.log("[i] API is initialized")
     },
     get: function() {
         $.ajax()
-        //$api.__xmlhttp.open("GET", $api.__url, true)
-        //$api.__xmlhttp.send()
     }
 }
