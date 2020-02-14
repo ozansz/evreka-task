@@ -6,9 +6,15 @@ var $dom = {
         console.log("[i] Table is cleared")
     },
     showLodingIcon: function() {
+        $("#data-table").hide()
+        $("#loading-icon").show()
+
         console.log("[i] Loading icon is activated")
     },
     hideLodingIcon: function() {
+        $("#data-table").show()
+        $("#loading-icon").hide()
+
         console.log("[i] Loading icon is disabled")
     },
     updateData: function(data) {

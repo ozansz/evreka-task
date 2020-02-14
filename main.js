@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $("#loading-icon").hide()
     $api.initialize()
 
     setInterval(function() {
