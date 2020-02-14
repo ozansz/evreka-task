@@ -1,12 +1,16 @@
 $(document).ready(function() {
     $api.initialize()
-    $api.get()  
-})
 
-setInterval(function() {
-    $api.get()
-}, 60000)
+    setInterval(function() {
+        $dom.clearTable()
+        $api.get()
+    }, 60000)
+    
+    $("#update-btn").click(function() {
+        console.log("[i] Update event called")
+        $dom.clearTable()
+        $api.get()
+    })
 
-$("#update-btn").click(function() {
     $api.get()
 })
